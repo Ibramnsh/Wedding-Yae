@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>Yae Miko</h2>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#couple">Couple</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Bram & Yae Miko</h1>
+        <p>15 Desember 2045</p>
+        <div class="countdown">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="couple-section" id="couple">
+      <h2>The Couple</h2>
+      <div class="couple-container">
+        <div class="couple-card">
+          <img src="img/1_big.jpg" alt="Groom" />
+          <h3>Me</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="couple-card">
+          <img src="img/Yae.Miko.full.3600626.jpg" alt="Bride" />
+          <h3>Yae Miko</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="img/yae_miko_theme___wallpaper_by_amarislindsey_df26ad7-pre.jpg"
+            alt="Gallery Image 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/44d33869-a7cf-4030-916a-433ba8d2c7ad/dgdc7lx-e79ee7ee-f3c9-4977-a19f-6128e9f3147a.png/v1/fill/w_1192,h_670,q_70,strp/yae_miko_by_bloomartworks_dgdc7lx-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNDRkMzM4NjktYTdjZi00MDMwLTkxNmEtNDMzYmE4ZDJjN2FkXC9kZ2RjN2x4LWU3OWVlN2VlLWYzYzktNDk3Ny1hMTlmLTYxMjhlOWYzMTQ3YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.2t7k__We2xpCPOOG2s-OIjxY7l9ertJ0sLXYN-1mRPU"
+            alt="Gallery Image 2"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cd9d12cf-c2ad-46a4-b215-182631a4293c/dgpqdco-a22eee71-4b50-4b09-b06a-c2cc78808be1.jpg/v1/fill/w_1244,h_700,q_70,strp/df13_014___genshin_impact___yae_miko_by_destinctivart_dgpqdco-350t-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2NkOWQxMmNmLWMyYWQtNDZhNC1iMjE1LTE4MjYzMWE0MjkzY1wvZGdwcWRjby1hMjJlZWU3MS00YjUwLTRiMDktYjA2YS1jMmNjNzg4MDhiZTEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.q6rvGhBDs7eWbCdJpIoTDssiouXQH3ePtbxvyDIsrvk"
+            alt="Gallery Image 3"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1f9c5a1-32f4-45ee-9ca0-60805998bde1/dhtw9za-0aefc86d-db8a-4f26-bbb9-d4441e7f051e.png/v1/fill/w_1248,h_700,q_70,strp/yae_miko___genshin_impact__by_naughtyangelx_dhtw9za-350t-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE0NCIsInBhdGgiOiJcL2ZcL2UxZjljNWExLTMyZjQtNDVlZS05Y2EwLTYwODA1OTk4YmRlMVwvZGh0dzl6YS0wYWVmYzg2ZC1kYjhhLTRmMjYtYmJiOS1kNDQ0MWU3ZjA1MWUucG5nIiwid2lkdGgiOiI8PTIwNDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1qgJCf2lLrIauJ02coBti6BTBgAGv3XW4TAa_hX1MLo"
+            alt="Gallery Image 4"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80e7e120-046e-40f4-82bc-bdf25a342412/deqgdsz-e17a46f3-7cba-4e12-a033-187fa01dd05f.png/v1/fill/w_700,h_322,q_70,strp/yae_miko_by_bbelka_deqgdsz-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTg5IiwicGF0aCI6IlwvZlwvODBlN2UxMjAtMDQ2ZS00MGY0LTgyYmMtYmRmMjVhMzQyNDEyXC9kZXFnZHN6LWUxN2E0NmYzLTdjYmEtNGUxMi1hMDMzLTE4N2ZhMDFkZDA1Zi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.AvyfsGPIcNdx0NLGkcZBcnJt9XTpy96QHfx4bQzN24s"
+            alt="Gallery Image 5"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ae619df9-73af-48ab-a67b-bdb258e047dc/dgkp27w-3e613efc-7757-4196-baf4-0b9f31e25186.jpg/v1/fill/w_467,h_700,q_70,strp/yae_miko_by_pekotu_dgkp27w-350t-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUzNiIsInBhdGgiOiJcL2ZcL2FlNjE5ZGY5LTczYWYtNDhhYi1hNjdiLWJkYjI1OGUwNDdkY1wvZGdrcDI3dy0zZTYxM2VmYy03NzU3LTQxOTYtYmFmNC0wYjlmMzFlMjUxODYuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.14sX12YLwxZM6UGIXaVE3YVPg-M8QKLc7NlOd8enHHE"
+            alt="Gallery Image 6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://4kwallpapers.com/images/wallpapers/yae-miko-genshin-2048x2048-19156.jpg"
+            alt="Gallery Image 7"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/755/942/326/genshin-impact-yae-miko-genshin-impact-anime-girls-anime-pink-hair-hd-wallpaper-preview.jpg"
+            alt="Gallery Image 8"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://e1.pxfuel.com/desktop-wallpaper/907/950/desktop-wallpaper-the-way-you-play-yae-miko-could-be-totally-different-in-next-genshin-update-genshin-impact-yae-miko.jpg"
+            alt="Gallery Image 9"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://e0.pxfuel.com/wallpapers/19/311/desktop-wallpaper-genshin-impact-yae-miko-guide-builds-and-best-uses-yae-miko-burst.jpg"
+            alt="Gallery Image 10"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+      <h2>RSVP</h2>
+      <form class="rsvp-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <select required>
+          <option value="" disabled selected>Will you attend?</option>
+          <option value="yes">Yes, I'll be there</option>
+          <option value="no">Sorry, I can't make it</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

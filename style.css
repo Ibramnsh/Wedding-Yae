@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #666;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 97vh;
+  background-image: url(img/WhatsApp\ Image\ 2025-02-11\ at\ 10.30.12_8b65c365.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.hero-content h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease 0.5s forwards;
+}
+
+/* Countdown Styles */
+.countdown {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  backdrop-filter: blur(5px);
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Couple Section */
+.couple-section {
+  background-color: #ebebeb;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.couple-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.couple-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.couple-card.active {
+  transform: scale(1);
+}
+
+.couple-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 100px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* RSVP Section */
+.rsvp {
+  padding: 100px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.rsvp h2 {
+  margin-bottom: 40px;
+}
+
+.rsvp-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.rsvp-form button {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rsvp-form button:hover {
+  background: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  /* Countdown Styles */
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .countdown-item {
+    padding: 15px;
+    min-width: 80px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+
+  /* Couple Section */
+  .couple-section {
+    padding: 50px 20px;
+  }
+
+  .couple-container {
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .couple-card {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  .couple-card img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Gallery Section */
+  .gallery {
+    padding: 50px 20px;
+  }
+
+  .gallery h2 {
+    margin-bottom: 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  /* RSVP Section */
+  .rsvp {
+    padding: 50px 20px;
+  }
+
+  .rsvp h2 {
+    margin-bottom: 20px;
+  }
+
+  .rsvp-form {
+    gap: 15px;
+  }
+
+  .rsvp-form input,
+  .rsvp-form select,
+  .rsvp-form button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Countdown Styles */
+  .countdown-item {
+    padding: 10px;
+    min-width: 70px;
+  }
+
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+
+  /* Couple Section */
+  .couple-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Gallery Section */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  /* RSVP Section */
+  .rsvp-form input,
+  .rsvp-form select,
+  .rsvp-form button {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
